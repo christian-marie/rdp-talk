@@ -6,4 +6,4 @@ clean:
 	rm -f $(PDFS)
 
 %.pdf: %.md  template.tex
-	pandoc -H template.tex -i -t beamer --highlight-style=haddock -s $< -o $@ 
+	pandoc --latex-engine=xelatex -H template.tex -i -t beamer --highlight-style=haddock -s $< -o $@ 

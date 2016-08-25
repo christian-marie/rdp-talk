@@ -6,6 +6,7 @@
 module Main where
 
 import           Control.Arrow
+import           Data.Coerce
 import           Data.Function
 import           Data.List
 import           Diagrams.Backend.Cairo.CmdLine
@@ -41,7 +42,7 @@ input =
 renderate :: Double -> [V2 Double] -> QDiagram Cairo V2 Double Any
 renderate epsilon xs =
     topLeftText ("\tf(x)\t= e⁻ˣcos(2πx), x ∈ [0, 5]\n" <> status)
-    === fmap (p2 . unr2) xs # fromVertices # strokeLine
+    === coerce xs # fromVertices # strokeLine
   where
     status = formatToString ("\tε \t= " % fixed 3 % "\t\t" % "n = " % int)
                             epsilon (length xs)
