@@ -10,6 +10,9 @@ Repeat.
 
 It's called RDP, or Ramer-Douglas-Peuker. It's used in robotics, aparrently.
 
+	
+Thomas Peucker (Geographer/Computer Scientist) changed his last name to Poiker to reflect the pronunciation because Americans and Canadians were pronouncing Peucker more like Puker.
+
 # Step 1. Bring meaning to your futile existance by typing
 
 Shun the inflexible contexts and load the strings some more, we won't get
